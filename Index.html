@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>All Assam Driver & Mechanic Requirement and Hire</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  
+
+  <style>
+
+    :root {
+
+      --primary: #2563eb;       /* Royal Blue */
+
+      --secondary: #f97316;     /* Electric Orange */
+
+      --accent-green: #10b981;  /* Emerald / WhatsApp Green */
+
+      --dark-navy: #0f172a;     /* Deep Slate */
+
+      --bg-light: #f8fafc;
+
+      --card-bg: #ffffff;
+
+      --text-main: #1e293b;
+
+      --text-muted: #64748b;
+
+    }
+
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+      font-family: 'Plus Jakarta Sans', sans-serif;
+
+      scroll-behavior: smooth;
+
+    }
+
+
+    body {
+
+      background-color: var(--bg-light);
+
+      color: var(--text-main);
+
+      line-height: 1.6;
+
+    }
+
+
+    /* Top Bar */
+
+    .top-bar {
+
+      background: linear-gradient(90deg, #1d4ed8, #f97316);
+
+      color: white;
+
+      text-align: center;
+
+      padding: 8px 16px;
+
+      font-size: 0.9rem;
+
+      font-weight: 600;
+
+    }
+
+
+    /* Header & Navigation */
+
+    header {
+
+      background: #ffffff;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 100;
+
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+
+    }
+
+
+    .navbar {
+
+      max-width: 1200px;
+
+      margin: 0 auto;
+
+      padding: 1rem 1.5rem;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+    }
+
+
+    .brand {
+
+      font-size: 1.25rem;
+
+      font-weight: 800;
+
+      color: var(--dark-navy);
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      text-decoration: none;
+
+    }
+
+
+    .brand span {
+
+      color: var(--secondary);
+
+    }
+
+
+    .nav-links a {
+
+      text-decoration: none;
+
+      color: var(--dark-navy);
+
+      font-weight: 600;
+
+      margin-left: 1.5rem;
+
+      transition: color 0.2s;
+
+    }
+
+
+    .nav-links a:hover {
+
+      color: var(--primary);
+
+    }
+
+
+    /* Hero Section */
+
+    .hero {
+
+      background: linear-gradient(135deg, #eff6ff 0%, #fff7ed 100%);
+
+      padding: 4.5rem 1.5rem 3.5rem;
+
+      text-align: center;
+
+      position: relative;
+
+    }
+
+
+    .hero-container {
+
+      max-width: 900px;
+
+      margin: 0 auto;
+
+    }
+
+
+    .badge {
+
+      display: inline-block;
+
+      background: #e0f2fe;
+
+      color: #0284c7;
+
+      padding: 6px 16px;
+
+      border-radius: 50px;
+
+      font-weight: 700;
+
+      font-size: 0.85rem;
+
+      margin-bottom: 1.2rem;
+
+      letter-spacing: 0.5px;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .hero h1 {
+
+      font-size: 2.5rem;
+
+      color: var(--dark-navy);
+
+      font-weight: 800;
+
+      line-height: 1.25;
+
+      margin-bottom: 1.2rem;
+
+    }
+
+
+    .hero h1 span.highlight {
+
+      background: linear-gradient(120deg, #2563eb, #f97316);
+
+      -webkit-background-clip: text;
+
+      -webkit-text-fill-color: transparent;
+
+    }
+
+
+    .hero p {
+
+      font-size: 1.15rem;
+
+      color: var(--text-muted);
+
+      max-width: 700px;
+
+      margin: 0 auto 2rem;
+
+    }
+
+
+    .hero-buttons {
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 1rem;
+
+      flex-wrap: wrap;
+
+    }
+
+
+    /* Buttons */
+
+    .btn {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      padding: 0.85rem 1.8rem;
+
+      border-radius: 50px;
+
+      font-weight: 700;
+
+      font-size: 1rem;
+
+      text-decoration: none;
+
+      transition: transform 0.2s, box-shadow 0.2s;
+
+      cursor: pointer;
+
+      border: none;
+
+    }
+
+
+    .btn:hover {
+
+      transform: translateY(-2px);
+
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+    }
+
+
+    .btn-call {
+
+      background: var(--primary);
+
+      color: #ffffff;
+
+    }
+
+
+    .btn-whatsapp {
+
+      background: var(--accent-green);
+
+      color: #ffffff;
+
+    }
+
+
+    .btn-secondary {
+
+      background: var(--secondary);
+
+      color: #ffffff;
+
+    }
+
+
+    /* Services Section */
+
+    .section {
+
+      padding: 4.5rem 1.5rem;
+
+      max-width: 1200px;
+
+      margin: 0 auto;
+
+    }
+
+
+    .section-title {
+
+      text-align: center;
+
+      margin-bottom: 3rem;
+
+    }
+
+
+    .section-title h2 {
+
+      font-size: 2.2rem;
+
+      font-weight: 800;
+
+      color: var(--dark-navy);
+
+    }
+
+
+    .section-title p {
+
+      color: var(--text-muted);
+
+      margin-top: 0.5rem;
+
+      font-size: 1.05rem;
+
+    }
+
+
+    .service-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+      gap: 1.75rem;
+
+    }
+
+
+    .card {
+
+      background: var(--card-bg);
+
+      border-radius: 18px;
+
+      padding: 2.2rem;
+
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+
+      border-top: 6px solid transparent;
+
+      transition: transform 0.2s ease;
+
+    }
+
+
+    .card:hover {
+
+      transform: translateY(-6px);
+
+    }
+
+
+    .card-owner-driver {
+
+      border-color: #3b82f6;
+
+    }
+
+    .card-owner-mechanic {
+
+      border-color: #f97316;
+
+    }
+
+    .card-job-driver {
+
+      border-color: #10b981;
+
+    }
+
+    .card-job-mechanic {
+
+      border-color: #8b5cf6;
+
+    }
+
+
+    .card-icon {
+
+      font-size: 2.5rem;
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    .card h3 {
+
+      font-size: 1.35rem;
+
+      font-weight: 700;
+
+      color: var(--dark-navy);
+
+      margin-bottom: 0.75rem;
+
+    }
+
+
+    .card p {
+
+      color: var(--text-muted);
+
+      font-size: 0.95rem;
+
+      line-height: 1.5;
+
+    }
+
+
+    /* Dual Callout Banner */
+
+    .callout-box {
+
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+
+      color: #ffffff;
+
+      border-radius: 24px;
+
+      padding: 3rem 2rem;
+
+      text-align: center;
+
+      margin: 2rem 0 4rem;
+
+      position: relative;
+
+      overflow: hidden;
+
+    }
+
+
+    .callout-box h3 {
+
+      font-size: 1.8rem;
+
+      font-weight: 700;
+
+      margin-bottom: 0.75rem;
+
+    }
+
+
+    .callout-box p {
+
+      color: #94a3b8;
+
+      max-width: 600px;
+
+      margin: 0 auto 1.5rem;
+
+    }
+
+
+    /* Contact Section */
+
+    .contact-container {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+      gap: 2rem;
+
+      background: #ffffff;
+
+      border-radius: 24px;
+
+      padding: 2.5rem;
+
+      box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+
+    }
+
+
+    .contact-info h3 {
+
+      font-size: 1.8rem;
+
+      color: var(--dark-navy);
+
+      margin-bottom: 1rem;
+
+    }
+
+
+    .contact-info p {
+
+      color: var(--text-muted);
+
+      margin-bottom: 1.8rem;
+
+    }
+
+
+    .contact-action-list {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 1rem;
+
+    }
+
+
+    .action-card {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 1rem;
+
+      background: var(--bg-light);
+
+      padding: 1.2rem;
+
+      border-radius: 14px;
+
+      text-decoration: none;
+
+      color: var(--text-main);
+
+      font-weight: 600;
+
+      border: 1px solid #e2e8f0;
+
+      transition: all 0.2s;
+
+    }
+
+
+    .action-card:hover {
+
+      border-color: var(--primary);
+
+      background: #eff6ff;
+
+    }
+
+
+    .action-card .icon-circle {
+
+      width: 48px;
+
+      height: 48px;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 1.4rem;
+
+      color: white;
+
+    }
+
+
+    .bg-green { background: var(--accent-green); }
+
+    .bg-blue { background: var(--primary); }
+
+
+    /* Quick Form */
+
+    .contact-form form {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 1rem;
+
+    }
+
+
+    .contact-form input, 
+
+    .contact-form select, 
+
+    .contact-form textarea {
+
+      width: 100%;
+
+      padding: 0.9rem 1rem;
+
+      border-radius: 10px;
+
+      border: 1px solid #cbd5e1;
+
+      font-size: 0.95rem;
+
+      outline: none;
+
+    }
+
+
+    .contact-form input:focus, 
+
+    .contact-form select:focus, 
+
+    .contact-form textarea:focus {
+
+      border-color: var(--primary);
+
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+
+    }
+
+
+    /* Floating WhatsApp Button for Mobile */
+
+    .floating-whatsapp {
+
+      position: fixed;
+
+      bottom: 25px;
+
+      right: 25px;
+
+      background: var(--accent-green);
+
+      color: white;
+
+      width: 60px;
+
+      height: 60px;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 30px;
+
+      box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4);
+
+      z-index: 999;
+
+      text-decoration: none;
+
+      transition: transform 0.2s;
+
+    }
+
+
+    .floating-whatsapp:hover {
+
+      transform: scale(1.1);
+
+    }
+
+
+    /* Footer */
+
+    footer {
+
+      background: #090d16;
+
+      color: #94a3b8;
+
+      text-align: center;
+
+      padding: 2.5rem 1.5rem;
+
+      font-size: 0.9rem;
+
+      margin-top: 4rem;
+
+    }
+
+
+    footer p {
+
+      margin-top: 0.5rem;
+
+    }
+
+
+    @media (max-width: 768px) {
+
+      .hero h1 {
+
+        font-size: 1.85rem;
+
+      }
+
+      .nav-links {
+
+        display: none;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- Top Notification -->
+
+  <div class="top-bar">
+
+    🚗 Connecting Drivers, Mechanics & Vehicle Owners Across All Assam!
+
+  </div>
+
+
+  <!-- Header -->
+
+  <header>
+
+    <div class="navbar">
+
+      <a href="#" class="brand">
+
+        🚚 All Assam <span>Hire & Requirement</span>
+
+      </a>
+
+      <div class="nav-links">
+
+        <a href="#services">Services</a>
+
+        <a href="#about">How It Works</a>
+
+        <a href="#contact">Contact Us</a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+
+    <div class="hero-container">
+
+      <div class="badge">Assam's Trusted Network</div>
+
+      <h1>
+
+        Need a Driver or Mechanic? <br>
+
+        <span class="highlight">Looking for a Reliable Job?</span>
+
+      </h1>
+
+      <p>
+
+        We connect vehicle owners with skilled, verified drivers and experienced mechanics. 
+
+        Whether you have a commercial truck, private car, or workshop in Assam, we have you covered.
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <!-- REPLACE '916002376271' WITH YOUR ACTUAL PHONE NUMBER -->
+
+        <a href="tel:+916002376271" class="btn btn-call">
+
+          📞 Call Now
+
+        </a>
+
+        <a href="https://wa.me/916002376271?text=Hello%2C%20I%20need%20assistance%20with%20Driver/Mechanic%20service." target="_blank" class="btn btn-whatsapp">
+
+          💬 WhatsApp Us
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Services Section -->
+
+  <section id="services" class="section">
+
+    <div class="section-title">
+
+      <h2>Our Services & Opportunities</h2>
+
+      <p>Tailored solutions for both vehicle owners and skilled workers</p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+      <!-- 1. Hire a Driver -->
+
+      <div class="card card-owner-driver">
+
+        <div class="card-icon">🚖</div>
+
+        <h3>Hire a Driver</h3>
+
+        <p>Experienced commercial truck drivers, private car drivers, and heavy vehicle operators ready for local and long-distance routes across Assam.</p>
+
+      </div>
+
+
+      <!-- 2. Hire a Mechanic -->
+
+      <div class="card card-owner-mechanic">
+
+        <div class="card-icon">🔧</div>
+
+        <h3>Hire a Mechanic</h3>
+
+        <p>Get skilled diesel mechanics, auto-electricians, and workshop technicians for maintenance, emergency breakdowns, and regular servicing.</p>
+
+      </div>
+
+
+      <!-- 3. Driver Job Opportunities -->
+
+      <div class="card card-job-driver">
+
+        <div class="card-icon">🪪</div>
+
+        <h3>Jobs for Drivers</h3>
+
+        <p>Are you an experienced driver looking for work? Register your profile with us to get connected with verified vehicle owners and transport firms.</p>
+
+      </div>
+
+
+      <!-- 4. Mechanic Job Opportunities -->
+
+      <div class="card card-job-mechanic">
+
+        <div class="card-icon">⚙️</div>
+
+        <h3>Jobs for Mechanics</h3>
+
+        <p>Mechanics and helpers can find steady employment opportunities with private garages, fleet operators, and transport companies throughout Assam.</p>
+
+      </div>
+
+    </div>
+
+
+    <!-- Callout Banner -->
+
+    <div class="callout-box" id="about">
+
+      <h3>Fast, Reliable & Direct Assistance</h3>
+
+      <p>No middlemen delays. Speak directly to us on Call or WhatsApp to post your requirement or apply for an open job immediately.</p>
+
+      <a href="#contact" class="btn btn-secondary">Get in Touch Today</a>
+
+    </div>
+
+  </section>
+
+
+  <!-- Contact Section -->
+
+  <section id="contact" class="section">
+
+    <div class="section-title">
+
+      <h2>Contact Us (Call / WhatsApp)</h2>
+
+      <p>Reach out anytime. We respond promptly to all inquiries.</p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+      <!-- Direct Contact Options -->
+
+      <div class="contact-info">
+
+        <h3>Connect Directly</h3>
+
+        <p>Choose your preferred way to connect with us for hiring or finding employment:</p>
+
+        
+
+        <div class="contact-action-list">
+
+          <!-- WhatsApp Link -->
+
+          <a href="https://wa.me/916002376271?text=Hello%2C%20I%20am%20interested%20in%20your%20services." target="_blank" class="action-card">
+
+            <div class="icon-circle bg-green">💬</div>
+
+            <div>
+
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Chat on WhatsApp</div>
+
+              <div style="font-size: 1.1rem; color: #10b981;">+91 60023 76271</div>
+
+            </div>
+
+          </a>
+
+
+          <!-- Direct Phone Call -->
+
+          <a href="tel:+916002376271" class="action-card">
+
+            <div class="icon-circle bg-blue">📞</div>
+
+            <div>
+
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Direct Call</div>
+
+              <div style="font-size: 1.1rem; color: var(--primary);">+91 6002376271</div>
+
+            </div>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Quick Message / Booking Form -->
+
+      <div class="contact-form">
+
+        <form onsubmit="handleForm(event)">
+
+          <input type="text" id="fullName" placeholder="Your Name" required>
+
+          <input type="tel" id="userPhone" placeholder="Your Phone Number" required>
+
+          <select id="userRole" required>
+
+            <option value="" disabled selected>I am looking for...</option>
+
+            <option value="Need to hire a Driver">Vehicle Owner - Need a Driver</option>
+
+            <option value="Need to hire a Mechanic">Vehicle Owner - Need a Mechanic</option>
+
+            <option value="Driver looking for Job">Driver - Looking for a Job</option>
+
+            <option value="Mechanic looking for Job">Mechanic - Looking for a Job</option>
+
+          </select>
+
+          <input type="text" id="userLocation" placeholder="Your Location in Assam (e.g., Guwahati, Dibrugarh, etc.)" required>
+
+          <button type="submit" class="btn btn-secondary" style="width: 100%; justify-content: center;">Send via WhatsApp</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Floating WhatsApp Icon -->
+
+  <a href="https://wa.me/916002376271" class="floating-whatsapp" target="_blank" title="Chat on WhatsApp">
+
+    💬
+
+  </a>
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    <p><strong>All Assam Driver and Mechanic Requirement and Hire</strong></p>
+
+    <p>Connecting trust, skills, and wheels across Assam.</p>
+
+    <p style="margin-top: 1rem; font-size: 0.8rem; color: #64748b;">&copy; 2026 All Rights Reserved.</p>
+
+  </footer>
+
+
+  <script>
+
+    function handleForm(e) {
+
+      e.preventDefault();
+
+      const name = document.getElementById('fullName').value;
+
+      const phone = document.getElementById('userPhone').value;
+
+      const role = document.getElementById('userRole').value;
+
+      const location = document.getElementById('userLocation').value;
+
+
+      // REPLACE '916002376271' WITH YOUR ACTUAL PHONE NUMBER
+
+      const businessNumber = "916002376271";
+
+
+      const message = `Hello! I contacted you from your website:%0A- *Name:* ${name}%0A- *Phone:* ${phone}%0A- *Requirement:* ${role}%0A- *Location:* ${location}`;
+
+      window.open(`https://wa.me/${businessNumber}?text=${message}`, '_blank');
+
+    }
+
+  </script>
+
+</body>
+
+</html>
